@@ -28,7 +28,8 @@ For testing purposes you can use Minikube with four CPUs and 4GB of memory.
 Install Flux CLI, Helm and Tiller:
 
 ```bash
-brew install fluxctl kubernetes-helm
+sudo snap install fluxctl
+sudo snap install helm --classic
 
 kubectl -n kube-system create sa tiller
 
